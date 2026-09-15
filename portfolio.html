@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — DeeDiva Beauty</title>
+<meta name="description" content="Portfolio of bridal, SFX, editorial, gele, and nail work by DeeDiva Beauty.">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<a class="visually-hidden" href="#main">Skip to content</a>
+
+<!-- ============================= HEADER ============================= -->
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="nav-logo" aria-label="DeeDiva Beauty home">
+      <img src="assets/monogram_wine.svg" alt="" width="34" height="34">
+      <img class="wordmark" src="assets/wordmark_transparent_wine.svg" alt="DeeDiva Beauty">
+    </a>
+
+    <nav id="nav-links" class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html" aria-current="page">Portfolio</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="instagram.html">Instagram Feed</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="nav-ig" href="https://www.instagram.com/skyw_avy" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+        @skyw_avy
+      </a>
+      <a class="btn btn-primary btn-sm" href="https://wa.me/2347074073883" target="_blank" rel="noopener">Book Now</a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============================= PAGE INTRO ============================= -->
+  <section class="page-intro">
+    <div class="container">
+      <p class="eyebrow">Portfolio</p>
+      <h1>A look across the work.</h1>
+      <p class="lede">Bridal, SFX, editorial, gele, and nails — filter by category or browse everything below.</p>
+    </div>
+  </section>
+
+  <!-- ============================= FILTER TABS ============================= -->
+  <nav class="filter-bar" aria-label="Filter portfolio by category">
+    <div class="container filter-tabs" id="filter-tabs">
+      <button class="filter-tab is-active" data-filter="all">All Work</button>
+      <button class="filter-tab" data-filter="bridal">Bridal</button>
+      <button class="filter-tab" data-filter="sfx">SFX</button>
+      <button class="filter-tab" data-filter="editorial">Editorial</button>
+      <button class="filter-tab" data-filter="gele">Gele</button>
+      <button class="filter-tab" data-filter="nails">Nails</button>
+    </div>
+  </nav>
+
+  <!-- ============================= GALLERY ============================= -->
+  <section class="section container">
+    <div class="gallery-grid" id="gallery-grid">
+
+      <button class="gallery-tile t1" data-category="bridal" aria-label="View Bridal image 1"><span class="tag">Bridal</span></button>
+      <button class="gallery-tile t2" data-category="sfx" aria-label="View SFX image 1"><span class="tag">SFX</span></button>
+      <button class="gallery-tile t3" data-category="editorial" aria-label="View Editorial image 1"><span class="tag">Editorial</span></button>
+      <button class="gallery-tile t4" data-category="gele" aria-label="View Gele image 1"><span class="tag">Gele</span></button>
+      <button class="gallery-tile t5" data-category="nails" aria-label="View Nails image 1"><span class="tag">Nails</span></button>
+
+      <button class="gallery-tile t4" data-category="bridal" aria-label="View Bridal image 2"><span class="tag">Bridal</span></button>
+      <button class="gallery-tile t3" data-category="sfx" aria-label="View SFX image 2"><span class="tag">SFX</span></button>
+      <button class="gallery-tile t1" data-category="editorial" aria-label="View Editorial image 2"><span class="tag">Editorial</span></button>
+      <button class="gallery-tile t5" data-category="gele" aria-label="View Gele image 2"><span class="tag">Gele</span></button>
+      <button class="gallery-tile t2" data-category="nails" aria-label="View Nails image 2"><span class="tag">Nails</span></button>
+
+      <button class="gallery-tile t2" data-category="bridal" aria-label="View Bridal image 3"><span class="tag">Bridal</span></button>
+      <button class="gallery-tile t5" data-category="sfx" aria-label="View SFX image 3"><span class="tag">SFX</span></button>
+      <button class="gallery-tile t4" data-category="editorial" aria-label="View Editorial image 3"><span class="tag">Editorial</span></button>
+      <button class="gallery-tile t1" data-category="gele" aria-label="View Gele image 3"><span class="tag">Gele</span></button>
+      <button class="gallery-tile t3" data-category="nails" aria-label="View Nails image 3"><span class="tag">Nails</span></button>
+
+    </div>
+
+    <p class="gallery-note">Placeholder tiles — real photography will replace these once available. The grid, filters, and lightbox already work; images just drop in.</p>
+  </section>
+
+  <!-- ============================= CTA BAND ============================= -->
+  <section class="cta-band">
+    <div class="container cta-band-inner">
+      <div>
+        <h2>Like what you see?</h2>
+        <p class="lede" style="color: var(--rose-gold-light);">Let's talk through your date, look, and location.</p>
+      </div>
+      <div class="hero-ctas">
+        <a class="btn btn-outline-light" href="https://wa.me/2347074073883" target="_blank" rel="noopener">Book on WhatsApp</a>
+        <a class="btn btn-primary" href="contact.html">Contact Page</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================= LIGHTBOX ============================= -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Portfolio image preview" hidden>
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close preview">&times;</button>
+  <div class="lightbox-panel" id="lightbox-panel">
+    <span class="lightbox-tag" id="lightbox-tag">Bridal</span>
+  </div>
+</div>
+
+<!-- ============================= FOOTER ============================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img class="wordmark" src="assets/wordmark_transparent_gold.svg" alt="DeeDiva Beauty">
+        <p>Beauty &amp; SFX makeup, hair, gele, nails, and fashion styling — for brides, performers, and productions.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="instagram.html">Instagram Feed</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="tel:+2347074073883">+234 707 407 3883</a></li>
+          <li><a href="mailto:Ndiezejennifer@gmail.com">Ndiezejennifer@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/skyw_avy" target="_blank" rel="noopener">@skyw_avy</a></li>
+          <li><span class="muted">DEEDIVA_beauty</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 DeeDiva Beauty. All rights reserved.</span>
+      <span>Beauty, styled to perform.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
